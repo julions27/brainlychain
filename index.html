@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perguntas e Respostas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <h1>Perguntas e Respostas</h1>
+        <div>
+            <h2>Criar Pergunta</h2>
+            <label for="title">Título:</label>
+            <input type="text" id="title" required>
+            <label for="body">Corpo:</label>
+            <textarea id="body" required></textarea>
+            <label for="reward">Recompensa (em Ether):</label>
+            <input type="text" id="reward" required>
+            <button id="createQuestion">Criar Pergunta</button>
+        </div>
+        <div>
+            <h2>Responder Pergunta</h2>
+            <label for="questionId">ID da Pergunta:</label>
+            <input type="text" id="questionId" required>
+            <label for="answerBody">Corpo da Resposta:</label>
+            <textarea id="answerBody" required></textarea>
+            <button id="answerQuestion">Responder Pergunta</button>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/web3@1.3.5/dist/web3.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
